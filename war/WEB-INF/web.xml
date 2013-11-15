@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>getProductsServiceImpl</servlet-name>
+    <servlet-class>deors.demos.web.gwt2.server.services.GetProductsServiceImpl</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>getProductNamesServiceImpl</servlet-name>
+    <servlet-class>deors.demos.web.gwt2.server.services.GetProductNamesServiceImpl</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>getProductByNameServiceImpl</servlet-name>
+    <servlet-class>deors.demos.web.gwt2.server.services.GetProductByNameServiceImpl</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>placeOrderService</servlet-name>
+    <servlet-class>deors.demos.web.gwt2.server.services.PlaceOrderServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>getProductsServiceImpl</servlet-name>
+    <url-pattern>/deors.demos.web.gwt2.ProductList/getProducts</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getProductNamesServiceImpl</servlet-name>
+    <url-pattern>/deors.demos.web.gwt2.ProductList/getProductNames</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getProductByNameServiceImpl</servlet-name>
+    <url-pattern>/deors.demos.web.gwt2.ProductList/getProductByName</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>placeOrderService</servlet-name>
+    <url-pattern>/deors.demos.web.gwt2.ProductList/placeOrderService</url-pattern>
+  </servlet-mapping>
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>ProductList.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
