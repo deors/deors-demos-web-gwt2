@@ -1,4 +1,5 @@
+.classpath
 .gwt
+.project
 .settings
-gwt-unitCache
-test-classes
+target
